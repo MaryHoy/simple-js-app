@@ -5,39 +5,42 @@ var repository = [
   { name: "Blastoise", height: 5.3, types: ["Water"] }
 ];
 
-repository.forEach(function(currentItem){
+function loopBlockFunction(currentItem) {
+  console.log(currentItem);
+}
+
 for (var i = 0; i < repository.length; i++) {
   var size;
-  if (repository[item].height > 3.9) {
+  if (repository[i].height > 3.9) {
     size = "<b>Wow, that’s big!</b>";
   } else {
     size = "<i>It's a small Pokemon.</i>";
   }
 
   var result;
-  for (var typeItem = 0; typeItem < repository[item].types.length; typeItem++) {
-    if (repository[item].types[typeItem] == "Grass") {
+  for (var iItem = 0; iItem < repository[i].types.length; iItem++) {
+    if (repository[i].types[iItem] == "Grass") {
       result = '<span style="color:green;"> ';
-    } else if (repository[item].types[typeItem] == "Fire") {
+    } else if (repository[i].types[iItem] == "Fire") {
       result = '<span style="color:red;"> ';
-    } else if (repository[item].types[typeItem] == "Fairy") {
+    } else if (repository[i].types[iItem] == "Fairy") {
       result = '<span style="color:purple;"> ';
-    } else if (repository[item].types[typeItem] == "Water") {
+    } else if (repository[i].types[iItem] == "Water") {
       result = '<span style="color:blue;"> ';
     }
   }
 
   document.write(
     '<div class="box">' +
-      repository[item].name +
+      repository[i].name +
       " (Height: " +
-      repository[item].height +
+      repository[i].height +
       ")" +
       "<br>" +
       size +
       result +
       "<br>" +
-      repository[item].types +
+      repository[i].types +
       "<p>" +
       "</div>"
   );
