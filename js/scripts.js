@@ -5,7 +5,8 @@ var repository = [
   { name: "Blastoise", height: 5.3, types: ["Water"] }
 ];
 
-for (var item = 0; item < repository.length; item++) {
+repository.forEach(function(currentItem){
+for (var i = 0; i < repository.length; i++) {
   var size;
   if (repository[item].height > 3.9) {
     size = "<b>Wow, that’s big!</b>";
@@ -20,7 +21,7 @@ for (var item = 0; item < repository.length; item++) {
     } else if (repository[item].types[typeItem] == "Fire") {
       result = '<span style="color:red;"> ';
     } else if (repository[item].types[typeItem] == "Fairy") {
-      result = '<span style="color:pink;"> ';
+      result = '<span style="color:purple;"> ';
     } else if (repository[item].types[typeItem] == "Water") {
       result = '<span style="color:blue;"> ';
     }
