@@ -1,0 +1,27 @@
+body {
+  padding-top: 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.my-class {
+  background-color: #fff;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  background-color: #e0dada;
+  color: rgb(0, 0, 0);
+  border: 2px solid #e0dada;
+}
+
+.my-class:hover {
+  background-color: #0a9ff5;
+  color: white;
+}
